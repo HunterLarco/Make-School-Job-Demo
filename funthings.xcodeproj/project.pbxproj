@@ -13,6 +13,7 @@
 		AE3ABC211C4D8423003DEFE8 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC201C4D8423003DEFE8 /* Job.swift */; };
 		AE3ABC251C4D9B00003DEFE8 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC241C4D9B00003DEFE8 /* BorderedView.swift */; };
 		AE3ABC271C4DA410003DEFE8 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC261C4DA410003DEFE8 /* DesignableButton.swift */; };
+		AE3ABC291C4DAC3D003DEFE8 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC281C4DAC3D003DEFE8 /* JobsView.swift */; };
 		AEA4CA581C49BC7A0046DD4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA571C49BC7A0046DD4F /* AppDelegate.swift */; };
 		AEA4CA5D1C49BC7A0046DD4F /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA4CA5B1C49BC7A0046DD4F /* Jobs.storyboard */; };
 		AEA4CA601C49BC7A0046DD4F /* funthings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA5E1C49BC7A0046DD4F /* funthings.xcdatamodeld */; };
@@ -21,7 +22,6 @@
 		AEA4CA701C49BC7A0046DD4F /* funthingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA6F1C49BC7A0046DD4F /* funthingsTests.swift */; };
 		AEA4CA7B1C49BC7A0046DD4F /* funthingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA7A1C49BC7A0046DD4F /* funthingsUITests.swift */; };
 		AEA4CA981C4AF1820046DD4F /* JobsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA941C4AF1820046DD4F /* JobsController.swift */; };
-		AEA4CA991C4AF1820046DD4F /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA961C4AF1820046DD4F /* JobsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 		AE3ABC201C4D8423003DEFE8 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		AE3ABC241C4D9B00003DEFE8 /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		AE3ABC261C4DA410003DEFE8 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		AE3ABC281C4DAC3D003DEFE8 /* JobsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		AEA4CA541C49BC7A0046DD4F /* funthings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funthings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA4CA571C49BC7A0046DD4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA4CA5C1C49BC7A0046DD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		AEA4CA7A1C49BC7A0046DD4F /* funthingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funthingsUITests.swift; sourceTree = "<group>"; };
 		AEA4CA7C1C49BC7A0046DD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA4CA941C4AF1820046DD4F /* JobsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsController.swift; sourceTree = "<group>"; };
-		AEA4CA961C4AF1820046DD4F /* JobsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsView.swift; path = ../JobPostingView/JobsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,19 +108,10 @@
 			path = Designables;
 			sourceTree = "<group>";
 		};
-		AE3ABC171C4D79CA003DEFE8 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				AEA4CA5B1C49BC7A0046DD4F /* Jobs.storyboard */,
-				AEA4CA631C49BC7A0046DD4F /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		AE3ABC181C4D79CA003DEFE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEA4CA961C4AF1820046DD4F /* JobsView.swift */,
+				AE3ABC281C4DAC3D003DEFE8 /* JobsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +140,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AE3ABC2A1C4DACA0003DEFE8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AEA4CA5B1C49BC7A0046DD4F /* Jobs.storyboard */,
+				AEA4CA631C49BC7A0046DD4F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		AEA4CA4B1C49BC7A0046DD4F = {
 			isa = PBXGroup;
 			children = (
@@ -172,11 +172,11 @@
 		AEA4CA561C49BC7A0046DD4F /* funthings */ = {
 			isa = PBXGroup;
 			children = (
+				AE3ABC2A1C4DACA0003DEFE8 /* Storyboards */,
 				AE3ABC1F1C4D8411003DEFE8 /* Models */,
 				AE3ABC191C4D7C37003DEFE8 /* Helpers */,
 				AE3ABC151C4D79CA003DEFE8 /* Cells */,
 				AE3ABC161C4D79CA003DEFE8 /* Designables */,
-				AE3ABC171C4D79CA003DEFE8 /* Storyboards */,
 				AE3ABC181C4D79CA003DEFE8 /* Views */,
 				AEA4CA931C4AF1820046DD4F /* Controllers */,
 				AEA4CA571C49BC7A0046DD4F /* AppDelegate.swift */,
@@ -348,12 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA4CA991C4AF1820046DD4F /* JobsView.swift in Sources */,
 				AE3ABC1B1C4D7E74003DEFE8 /* JobCell.swift in Sources */,
 				AEA4CA601C49BC7A0046DD4F /* funthings.xcdatamodeld in Sources */,
 				AE3ABC251C4D9B00003DEFE8 /* BorderedView.swift in Sources */,
 				AEA4CA981C4AF1820046DD4F /* JobsController.swift in Sources */,
 				AE3ABC1E1C4D8161003DEFE8 /* ArrayDataSource.swift in Sources */,
+				AE3ABC291C4DAC3D003DEFE8 /* JobsView.swift in Sources */,
 				AE3ABC211C4D8423003DEFE8 /* Job.swift in Sources */,
 				AEA4CA581C49BC7A0046DD4F /* AppDelegate.swift in Sources */,
 				AE3ABC271C4DA410003DEFE8 /* DesignableButton.swift in Sources */,
