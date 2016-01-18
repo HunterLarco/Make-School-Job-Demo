@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="48x-Uy-ScB" customClass="JobCell" customModule="funthings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="541"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="541"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDC-Db-bKz" customClass="BorderedView" customModule="funthings" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="541"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOL-wK-wjl" userLabel="Header">
+                                <rect key="frame" x="20" y="12" width="285" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl1-pG-zGX">
+                                        <rect key="frame" x="45" y="24" width="194" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiring Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-4U-bee">
+                                        <rect key="frame" x="86.5" y="60.5" width="111.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jl1-pG-zGX" secondAttribute="bottom" constant="24" id="6Bv-0M-NgW"/>
+                                    <constraint firstItem="jl1-pG-zGX" firstAttribute="top" secondItem="XOL-wK-wjl" secondAttribute="top" constant="24" id="Us8-ng-oqc"/>
+                                    <constraint firstItem="jl1-pG-zGX" firstAttribute="centerY" secondItem="XOL-wK-wjl" secondAttribute="centerY" id="oTn-VH-V72"/>
+                                    <constraint firstItem="jl1-pG-zGX" firstAttribute="centerX" secondItem="XOL-wK-wjl" secondAttribute="centerX" id="p6I-cX-I77"/>
+                                    <constraint firstItem="eGn-4U-bee" firstAttribute="centerX" secondItem="XOL-wK-wjl" secondAttribute="centerX" id="tVj-oT-8fv"/>
+                                    <constraint firstItem="eGn-4U-bee" firstAttribute="top" secondItem="jl1-pG-zGX" secondAttribute="bottom" constant="4" id="ubA-WS-Zqk"/>
+                                    <constraint firstAttribute="bottom" secondItem="eGn-4U-bee" secondAttribute="bottom" constant="24" id="wNe-Jp-Pww"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6Bv-0M-NgW"/>
+                                        <exclude reference="oTn-VH-V72"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvS-sO-GPY" userLabel="Header Bottom Border">
+                                <rect key="frame" x="81" y="117" width="162.5" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="N6n-qN-Z9o"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWj-hH-BiP" userLabel="Buttons">
+                                <rect key="frame" x="34" y="483" width="257" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZo-CY-m43" customClass="DesignableButton" customModule="funthings" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="38"/>
+                                        <inset key="contentEdgeInsets" minX="14" minY="10" maxX="14" maxY="10"/>
+                                        <state key="normal" title="Contact Now">
+                                            <color key="titleColor" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKn-qc-kgy" customClass="DesignableButton" customModule="funthings" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="0.0" width="127" height="38"/>
+                                        <inset key="contentEdgeInsets" minX="14" minY="10" maxX="14" maxY="10"/>
+                                        <state key="normal" title="Save For Later">
+                                            <color key="titleColor" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uKn-qc-kgy" firstAttribute="top" secondItem="SWj-hH-BiP" secondAttribute="top" id="4JF-rN-Bdw"/>
+                                    <constraint firstItem="uKn-qc-kgy" firstAttribute="leading" secondItem="bZo-CY-m43" secondAttribute="trailing" constant="12" id="Crw-Gf-ZhS"/>
+                                    <constraint firstItem="bZo-CY-m43" firstAttribute="leading" secondItem="SWj-hH-BiP" secondAttribute="leading" id="LPE-3p-QAd"/>
+                                    <constraint firstAttribute="trailing" secondItem="uKn-qc-kgy" secondAttribute="trailing" id="Ljq-1K-bVe"/>
+                                    <constraint firstAttribute="bottom" secondItem="uKn-qc-kgy" secondAttribute="bottom" id="Rfg-vj-Ype"/>
+                                    <constraint firstAttribute="bottom" secondItem="bZo-CY-m43" secondAttribute="bottom" id="ula-TE-Or8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MvS-sO-GPY" firstAttribute="top" secondItem="XOL-wK-wjl" secondAttribute="bottom" id="2ke-UI-lis"/>
+                            <constraint firstItem="SWj-hH-BiP" firstAttribute="centerX" secondItem="BDC-Db-bKz" secondAttribute="centerX" id="IlO-lf-gD4"/>
+                            <constraint firstItem="MvS-sO-GPY" firstAttribute="centerX" secondItem="BDC-Db-bKz" secondAttribute="centerX" id="U3w-On-3q6"/>
+                            <constraint firstItem="MvS-sO-GPY" firstAttribute="width" secondItem="BDC-Db-bKz" secondAttribute="width" multiplier="0.5" id="aUs-Af-WuY"/>
+                            <constraint firstItem="XOL-wK-wjl" firstAttribute="top" secondItem="BDC-Db-bKz" secondAttribute="top" constant="12" id="cPZ-d3-rLj"/>
+                            <constraint firstAttribute="trailing" secondItem="XOL-wK-wjl" secondAttribute="trailing" constant="20" id="sQC-nV-GOc"/>
+                            <constraint firstItem="XOL-wK-wjl" firstAttribute="leading" secondItem="BDC-Db-bKz" secondAttribute="leading" constant="20" id="sbf-fC-Jzc"/>
+                            <constraint firstAttribute="bottom" secondItem="SWj-hH-BiP" secondAttribute="bottom" constant="20" id="x6k-ij-Iff"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipping" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BDC-Db-bKz" secondAttribute="bottom" id="Tqo-wG-T4B"/>
+                <constraint firstAttribute="trailing" secondItem="BDC-Db-bKz" secondAttribute="trailing" id="U0g-at-Zha"/>
+                <constraint firstItem="BDC-Db-bKz" firstAttribute="leading" secondItem="48x-Uy-ScB" secondAttribute="leading" id="ZZy-HT-H1C"/>
+                <constraint firstItem="BDC-Db-bKz" firstAttribute="top" secondItem="48x-Uy-ScB" secondAttribute="top" id="Zlb-81-ipD"/>
+            </constraints>
+            <size key="customSize" width="325" height="541"/>
+            <connections>
+                <outlet property="companyTitle" destination="jl1-pG-zGX" id="Tfg-in-1Zb"/>
+            </connections>
+            <point key="canvasLocation" x="276.5" y="309.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
