@@ -46,15 +46,15 @@
                             <outlet property="collectionView" destination="nbW-F9-wIJ" id="SZA-1g-IyF"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="o9p-kc-cBL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="miniJobsView" destination="5fE-Oc-rzM" id="YJ6-Ct-qaz"/>
+                        <segue destination="GjR-UX-ckK" kind="presentation" identifier="segueToExpandedJobView" modalTransitionStyle="coverVertical" id="fEM-Th-nC9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1H5-cs-P26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101.5" y="57.5"/>
+            <point key="canvasLocation" x="-74.5" y="57.5"/>
         </scene>
         <!--Detailed Jobs View-->
         <scene sceneID="rDQ-9k-g1n">
@@ -91,7 +91,6 @@
                             <outlet property="collectionView" destination="DJa-Dh-Zei" id="eyf-J3-9Hg"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="2ld-Xi-NOG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="jobsView" destination="YKg-yj-kCN" id="8CE-fa-u5C"/>
@@ -99,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfh-XL-puw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="58"/>
+            <point key="canvasLocation" x="451.5" y="57.5"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,8 @@ class MiniJobsView: UIView {
     var dataSource: ArrayDataSource?
     var jobs: [Job]?
     
+    var delegate: MiniJobsViewDelegate?
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     func setupCollectionView() {
@@ -35,7 +37,10 @@ class MiniJobsView: UIView {
 }
 
 extension MiniJobsView: UICollectionViewDelegate {
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {}
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let index = indexPath.row;
+        delegate?.onJobSelect((jobs?[index])!, index: index)
+    }
 }
 
 extension MiniJobsView: UICollectionViewDelegateFlowLayout {
@@ -58,4 +63,8 @@ extension MiniJobsView: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
+}
+
+protocol MiniJobsViewDelegate {
+    func onJobSelect(job: Job, index: Int)
 }

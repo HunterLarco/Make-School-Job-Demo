@@ -15,7 +15,7 @@ class JobCell : UICollectionViewCell {
     
     var job: Job? {
         didSet {
-            companyTitle.text = job!.companyName
+            companyTitle.text = job?.companyName
         }
     }
     

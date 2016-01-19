@@ -16,6 +16,7 @@ class MiniJobsController : UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        miniJobsView.delegate = self
         miniJobsView.jobs = [createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob()];
         miniJobsView.setupCollectionView()
     }
@@ -34,5 +35,11 @@ class MiniJobsController : UIViewController {
             position: "iOS Engineer (Swift)"
         )
     }
-    
+
+}
+
+extension MiniJobsController : MiniJobsViewDelegate {
+    func onJobSelect(job: Job, index: Int){
+        self.performSegueWithIdentifier("segueToExpandedJobView", sender: nil)
+    }
 }
