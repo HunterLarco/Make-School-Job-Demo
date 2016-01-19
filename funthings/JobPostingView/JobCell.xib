@@ -28,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiring Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-4U-bee">
-                                        <rect key="frame" x="86.5" y="60.5" width="111.5" height="20.5"/>
+                                        <rect key="frame" x="86" y="60" width="111.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                         <color key="textColor" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWj-hH-BiP" userLabel="Buttons">
-                                <rect key="frame" x="34" y="483" width="257" height="38"/>
+                                <rect key="frame" x="56" y="483" width="213" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZo-CY-m43" customClass="DesignableButton" customModule="funthings" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="38"/>
@@ -79,9 +79,9 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKn-qc-kgy" customClass="DesignableButton" customModule="funthings" customModuleProvider="target">
-                                        <rect key="frame" x="130" y="0.0" width="127" height="38"/>
+                                        <rect key="frame" x="130" y="0.0" width="83" height="38"/>
                                         <inset key="contentEdgeInsets" minX="14" minY="10" maxX="14" maxY="10"/>
-                                        <state key="normal" title="Save For Later">
+                                        <state key="normal" title="Favorite">
                                             <color key="titleColor" red="0.32184908200000001" green="0.69428891380000002" blue="0.60407499659999997" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>

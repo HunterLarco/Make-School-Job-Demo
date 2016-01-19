@@ -31,5 +31,8 @@ class JobsController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onCloseClicked(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
