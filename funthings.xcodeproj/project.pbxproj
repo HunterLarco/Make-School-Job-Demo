@@ -14,8 +14,12 @@
 		AE3ABC251C4D9B00003DEFE8 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC241C4D9B00003DEFE8 /* BorderedView.swift */; };
 		AE3ABC271C4DA410003DEFE8 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC261C4DA410003DEFE8 /* DesignableButton.swift */; };
 		AE3ABC291C4DAC3D003DEFE8 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC281C4DAC3D003DEFE8 /* JobsView.swift */; };
+		AE3ABC2C1C4DAD2A003DEFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3ABC2B1C4DAD2A003DEFE8 /* Main.storyboard */; };
+		AE3ABC2E1C4DB9A8003DEFE8 /* MiniJobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3ABC2D1C4DB9A8003DEFE8 /* MiniJobCell.xib */; };
+		AE3ABC301C4DBC12003DEFE8 /* MiniJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC2F1C4DBC12003DEFE8 /* MiniJobsView.swift */; };
+		AE3ABC321C4DBCF0003DEFE8 /* MiniJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC311C4DBCF0003DEFE8 /* MiniJobCell.swift */; };
+		AE3ABC341C4DBDCD003DEFE8 /* MiniJobsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ABC331C4DBDCD003DEFE8 /* MiniJobsController.swift */; };
 		AEA4CA581C49BC7A0046DD4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA571C49BC7A0046DD4F /* AppDelegate.swift */; };
-		AEA4CA5D1C49BC7A0046DD4F /* Jobs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA4CA5B1C49BC7A0046DD4F /* Jobs.storyboard */; };
 		AEA4CA601C49BC7A0046DD4F /* funthings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA4CA5E1C49BC7A0046DD4F /* funthings.xcdatamodeld */; };
 		AEA4CA621C49BC7A0046DD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA4CA611C49BC7A0046DD4F /* Assets.xcassets */; };
 		AEA4CA651C49BC7A0046DD4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA4CA631C49BC7A0046DD4F /* LaunchScreen.storyboard */; };
@@ -49,9 +53,13 @@
 		AE3ABC241C4D9B00003DEFE8 /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		AE3ABC261C4DA410003DEFE8 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		AE3ABC281C4DAC3D003DEFE8 /* JobsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		AE3ABC2B1C4DAD2A003DEFE8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE3ABC2D1C4DB9A8003DEFE8 /* MiniJobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiniJobCell.xib; sourceTree = "<group>"; };
+		AE3ABC2F1C4DBC12003DEFE8 /* MiniJobsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniJobsView.swift; sourceTree = "<group>"; };
+		AE3ABC311C4DBCF0003DEFE8 /* MiniJobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniJobCell.swift; sourceTree = "<group>"; };
+		AE3ABC331C4DBDCD003DEFE8 /* MiniJobsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniJobsController.swift; sourceTree = "<group>"; };
 		AEA4CA541C49BC7A0046DD4F /* funthings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funthings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA4CA571C49BC7A0046DD4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEA4CA5C1C49BC7A0046DD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Jobs.storyboard; sourceTree = "<group>"; };
 		AEA4CA5F1C49BC7A0046DD4F /* funthings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = funthings.xcdatamodel; sourceTree = "<group>"; };
 		AEA4CA611C49BC7A0046DD4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA4CA641C49BC7A0046DD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +103,8 @@
 			children = (
 				AE3ABC131C4D6C68003DEFE8 /* JobCell.xib */,
 				AE3ABC1A1C4D7E74003DEFE8 /* JobCell.swift */,
+				AE3ABC2D1C4DB9A8003DEFE8 /* MiniJobCell.xib */,
+				AE3ABC311C4DBCF0003DEFE8 /* MiniJobCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -112,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				AE3ABC281C4DAC3D003DEFE8 /* JobsView.swift */,
+				AE3ABC2F1C4DBC12003DEFE8 /* MiniJobsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,8 +154,8 @@
 		AE3ABC2A1C4DACA0003DEFE8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				AEA4CA5B1C49BC7A0046DD4F /* Jobs.storyboard */,
 				AEA4CA631C49BC7A0046DD4F /* LaunchScreen.storyboard */,
+				AE3ABC2B1C4DAD2A003DEFE8 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				AEA4CA941C4AF1820046DD4F /* JobsController.swift */,
+				AE3ABC331C4DBDCD003DEFE8 /* MiniJobsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -321,8 +333,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA4CA651C49BC7A0046DD4F /* LaunchScreen.storyboard in Resources */,
+				AE3ABC2C1C4DAD2A003DEFE8 /* Main.storyboard in Resources */,
 				AEA4CA621C49BC7A0046DD4F /* Assets.xcassets in Resources */,
-				AEA4CA5D1C49BC7A0046DD4F /* Jobs.storyboard in Resources */,
+				AE3ABC2E1C4DB9A8003DEFE8 /* MiniJobCell.xib in Resources */,
 				AE3ABC141C4D6C68003DEFE8 /* JobCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,9 +364,12 @@
 				AE3ABC1B1C4D7E74003DEFE8 /* JobCell.swift in Sources */,
 				AEA4CA601C49BC7A0046DD4F /* funthings.xcdatamodeld in Sources */,
 				AE3ABC251C4D9B00003DEFE8 /* BorderedView.swift in Sources */,
+				AE3ABC301C4DBC12003DEFE8 /* MiniJobsView.swift in Sources */,
 				AEA4CA981C4AF1820046DD4F /* JobsController.swift in Sources */,
 				AE3ABC1E1C4D8161003DEFE8 /* ArrayDataSource.swift in Sources */,
+				AE3ABC341C4DBDCD003DEFE8 /* MiniJobsController.swift in Sources */,
 				AE3ABC291C4DAC3D003DEFE8 /* JobsView.swift in Sources */,
+				AE3ABC321C4DBCF0003DEFE8 /* MiniJobCell.swift in Sources */,
 				AE3ABC211C4D8423003DEFE8 /* Job.swift in Sources */,
 				AEA4CA581C49BC7A0046DD4F /* AppDelegate.swift in Sources */,
 				AE3ABC271C4DA410003DEFE8 /* DesignableButton.swift in Sources */,
@@ -392,15 +408,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AEA4CA5B1C49BC7A0046DD4F /* Jobs.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEA4CA5C1C49BC7A0046DD4F /* Base */,
-			);
-			name = Jobs.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		AEA4CA631C49BC7A0046DD4F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
