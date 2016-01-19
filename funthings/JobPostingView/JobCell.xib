@@ -141,6 +141,7 @@
             <size key="customSize" width="325" height="541"/>
             <connections>
                 <outlet property="companyTitle" destination="jl1-pG-zGX" id="Tfg-in-1Zb"/>
+                <outlet property="position" destination="eGn-4U-bee" id="7eh-tD-RXr"/>
             </connections>
             <point key="canvasLocation" x="276.5" y="309.5"/>
         </collectionViewCell>

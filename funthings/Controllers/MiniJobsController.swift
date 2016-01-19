@@ -39,7 +39,17 @@ class MiniJobsController : UIViewController {
 }
 
 extension MiniJobsController : MiniJobsViewDelegate {
+    
     func onJobSelect(job: Job, index: Int){
-        self.performSegueWithIdentifier("segueToExpandedJobView", sender: nil)
+        self.performSegueWithIdentifier("segueToExpandedJobView", sender: index)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let destination = segue.destinationViewController as! JobsController
+        let index = sender as! Int
+        
+        destination.jobs = miniJobsView.jobs
+        destination.index = index
+    }
+    
 }

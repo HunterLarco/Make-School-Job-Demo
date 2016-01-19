@@ -78,7 +78,9 @@
             </constraints>
             <size key="customSize" width="391" height="84.5"/>
             <connections>
+                <outlet property="companyTitle" destination="jqt-IN-ZEz" id="ltH-si-4vf"/>
                 <outlet property="imageView" destination="MMu-gh-KSM" id="gLI-d6-6XH"/>
+                <outlet property="position" destination="UNU-g9-bMw" id="e1n-R9-wgN"/>
             </connections>
             <point key="canvasLocation" x="184.5" y="208.25"/>
         </collectionViewCell>

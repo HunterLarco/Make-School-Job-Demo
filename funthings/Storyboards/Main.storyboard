@@ -85,8 +85,14 @@
                             <constraint firstItem="DJa-Dh-Zei" firstAttribute="leading" secondItem="YKg-yj-kCN" secondAttribute="leading" id="B48-8u-Wvp"/>
                             <constraint firstItem="DJa-Dh-Zei" firstAttribute="top" secondItem="LbL-qD-1ru" secondAttribute="bottom" id="GOX-au-aQ3"/>
                             <constraint firstAttribute="trailing" secondItem="DJa-Dh-Zei" secondAttribute="trailing" id="fEo-qd-jd0"/>
+                            <constraint firstItem="DJa-Dh-Zei" firstAttribute="top" secondItem="LbL-qD-1ru" secondAttribute="bottom" id="k7R-cG-Mkv"/>
                             <constraint firstItem="T9U-Bi-z49" firstAttribute="top" secondItem="DJa-Dh-Zei" secondAttribute="bottom" id="mKJ-bt-RVv"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GOX-au-aQ3"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outlet property="collectionView" destination="DJa-Dh-Zei" id="eyf-J3-9Hg"/>
                         </connections>

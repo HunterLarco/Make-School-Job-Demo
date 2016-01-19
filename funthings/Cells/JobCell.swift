@@ -12,10 +12,12 @@ let JobCellIdentifier = "JobCell"
 class JobCell : UICollectionViewCell {
     
     @IBOutlet weak var companyTitle: UILabel!
+    @IBOutlet weak var position: UILabel!
     
     var job: Job? {
         didSet {
             companyTitle.text = job?.companyName
+            position.text = job?.position
         }
     }
     

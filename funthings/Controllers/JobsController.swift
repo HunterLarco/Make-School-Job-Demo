@@ -11,13 +11,19 @@ import UIKit
 class JobsController: UIViewController {
     
     @IBOutlet var jobsView: JobsView!
+    
+    var jobs: [Job]?
+    var index: Int = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         // Do any additional setup after loading the view, typically from a nib.
         
-        jobsView.jobs = [createDemoJob(), createDemoJob(), createDemoJob()];
+        jobsView.jobs = jobs
         jobsView.setupCollectionView()
+        
+        let indexPath = NSIndexPath(forItem: index, inSection: 0)
+        jobsView.collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,15 +31,5 @@ class JobsController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func createDemoJob() -> Job {
-        return Job(
-            companyName: "larcolabs",
-            contactName: "Hunter Larco",
-            contactEmail: "hunter@larcolabs.com",
-            description: "lipsum",
-            position: "iOS Engineer (Swift)"
-        )
-    }
-
 }
 

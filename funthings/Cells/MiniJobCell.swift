@@ -12,10 +12,13 @@ let MiniJobCellIdentifier = "MiniJobCell"
 class MiniJobCell : UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var companyTitle: UILabel!
+    @IBOutlet weak var position: UILabel!
     
     var job: Job? {
         didSet {
-            
+            companyTitle.text = job?.companyName
+            position.text = job?.position
         }
     }
     

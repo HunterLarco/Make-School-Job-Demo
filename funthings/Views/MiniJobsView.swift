@@ -22,7 +22,7 @@ class MiniJobsView: UIView {
         dataSource = ArrayDataSource(items:jobs!, cellIdentifier: MiniJobCellIdentifier) {
             (cell, item) in
             
-            if let jobCell = cell as? JobCell {
+            if let jobCell = cell as? MiniJobCell {
                 if let job = item as? Job {
                     jobCell.job = job
                 }
