@@ -16,7 +16,7 @@ class MiniJobsController : UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        miniJobsView.jobs = [createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob()];
+        miniJobsView.jobs = [createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob(), createDemoJob()];
         miniJobsView.setupCollectionView()
     }
     

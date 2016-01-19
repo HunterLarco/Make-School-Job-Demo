@@ -40,8 +40,8 @@ extension MiniJobsView: UICollectionViewDelegate {
 
 extension MiniJobsView: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let width = (Int(collectionView.frame.size.width) / 3) - 12
-        let height = width;
+        let width = (Int(collectionView.frame.size.width)) - 20
+        let height = 80;
         let size = CGSize(width: width, height: height)
         
         return size
